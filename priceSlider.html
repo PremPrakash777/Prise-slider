@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Slider</title>
+    <link rel="stylesheet" href="priceSlider.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <h2>Slide the range and see the magic</h2>
+        <p><small>For range 10-30, product 1 will be enabled</small></p>
+        <p><small>For range 30-50, product 2 will be enabled</small></p>
+        <p><small>For range 50 onwards, product 3 will be enabled</small></p>
+      </header>
+      <main>
+        <label for="slider"
+          ><input type="range" min="10" max="100" value="50" /><span class="min"
+            >10</span
+          ><span class="max">100</span></label
+        ><input type="text" disabled="" value="50" />
+        <div class="prices">
+          <div class="price disabled">
+            <h2>Starter Pack</h2>
+            <ul>
+              <li>Bullet Point 1</li>
+              <li>Bullet Point 2</li>
+              <li>Bullet Point 3</li>
+              <li>Bullet Point 4</li>
+            </ul>
+            <button>Get This</button>
+          </div>
+          <div class="price disabled">
+            <h2>Individual Pack</h2>
+            <ul>
+              <li>Bullet Point 1</li>
+              <li>Bullet Point 2</li>
+              <li>Bullet Point 3</li>
+              <li>Bullet Point 4</li>
+              <li>Bullet Point 5</li>
+            </ul>
+            <button>Get This</button>
+          </div>
+          <div class="price">
+            <h2>Expert Pack</h2>
+            <ul>
+              <li>Bullet Point 1</li>
+              <li>Bullet Point 2</li>
+              <li>Bullet Point 3</li>
+              <li>Bullet Point 4</li>
+              <li>Bullet Point 5</li>
+              <li>Bullet Point 6</li>
+            </ul>
+            <button>Get This</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

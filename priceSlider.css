@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: aliceblue;
+    padding: 1rem 3rem;
+    text-align: center;
+}
+main{
+    padding: 1rem 3rem;
+    text-align: center;
+}
+main label{
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem;
+}
+main label + input{
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+main label span{
+    position: absolute;
+}
+main label span{
+    bottom: -40%;
+    font-size: 0.9rem;
+}
+main label span:first-of-type{
+    left: 0;
+}
+main label span:last-of-type{
+    right: 0;
+}
+.prices{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.price{
+    border: 1px solid;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.4);
+    background-color: antiquewhite;
+    width: 32%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.price.disabled{
+    box-shadow: none !important;
+    background-color: transparent !important;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.price h2{
+    margin-bottom: 1rem;
+}
+.price ul{
+    list-style: none;
+}
+.price ul li{
+    padding: 0.25rem 0;
+    margin: 0.25rem 0;
+}
+.price button{
+    background-color: rgb(90, 90, 184);
+    border: 2px solid rgb(90, 90, 184);
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.35s ease-out;
+}
+.price button:hover{
+    background-color: rgb(46, 46, 186);
+    border: 2px solid rgb(46, 46, 186);
+}
